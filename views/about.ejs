@@ -1,0 +1,66 @@
+<%- include("partials/header") -%>
+<link rel="stylesheet" href="/website-assets/compose.css">
+
+<title>write.it - about</title>
+</head>
+
+<body>
+
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <a class="navbar-brand" href="/">
+        <img src="/media/logo.png" width="60" height="65" class="d-inline-block align-top" alt="write-it-logo">
+        write.it
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/compose">Compose</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <section class="main">
+    <div class="form-bck post-bck">
+      <% if(fetchArticleErr == false && templating == true){ %>
+        <p class="about-para about-title">
+          <%= article.title%>
+        </p>
+        <p class="about-para" style="font-weight: 300;">
+          <%= article.content%>
+        </p>
+      <% } else if(fetchArticleErr == true && templating == true) { %>
+        <section class="err-sec">
+          <h3 class="err-txt">Error fetching the posts.</h3>
+          <h3 class="err-txt">Refresh to try again!</h3>
+        </section>
+      <% } else { %>
+      <p class="about-para about-title">
+        A food for thought ...
+      </p>
+      <p class="about-para">
+        Ideas by definition are always fragile, if they were resolved, they would be products, worthier conceivably.
+        Ergo, the creative process should always be afforded rare respect, and hence this website.
+        It's open-source and it's in the nascent stage, however, I'm committed to accelerating this further and beyond.
+        I profoundly believe that open-source and decentralized apps are the future, and we developers thrive because of these incredible people who contribute towards open-source.
+        Thanks for stopping by and hanging around. I hope to see you again soon!
+      </p>
+      <% } %>
+
+
+    </div>
+    <div class="social-media">
+      <a href="https://twitter.com/satyamsovan123"><i class="fab fa-twitter"></i></a>
+      <a href="https://github.com/satyamsovan123"><i class="fab fa-github"></i></a>
+    </div>
+  </section>
+
+  <%- include("partials/footer") -%>

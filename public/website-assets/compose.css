@@ -1,0 +1,287 @@
+/* compose-page */
+
+.main{
+  padding: 2% 2% 0% 2%;
+  /* width: 100%; */
+}
+
+.heading{
+  padding-bottom: 4%;
+  text-align: center;
+}
+
+.heading h1{
+  /* font-size: px !important; */
+}
+
+.form-bck{
+  /* margin: 2% 2% 2% 2%; */
+  border-radius: 20px;
+  background: #393E46;
+  box-shadow:  9px 9px 18px #32363d,
+             -9px -9px 18px #40464f;
+  padding: 4%;
+  /* display: flex;
+  flex-flow: column; */
+  /* height: 60vh; */
+
+  /* position: relative;
+  bottom: 10%;
+  width: 90%;
+  left: 50%;
+  transform: translateX(-50%); */
+}
+
+/* .form-bck form{
+  margin: auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 100% !important;
+
+} */
+
+.container-fluid::before {
+  visibility: hidden;
+}
+
+.bt-div{
+  width: 100%;
+  align-items: center;
+  text-align: center;
+}
+
+.compose-bt{
+  color: #eee !important;
+}
+.container-fluid::after {
+  visibility: hidden;
+}
+.compose-bt{
+  margin-top: 3% !important;
+}
+.compose-bt a {
+  font-size: 19px !important;
+}
+
+label{
+  color: #eee !important;
+  font-size: 18px;
+}
+
+input, textarea{
+  color: #eee !important;
+  background: #393E46 !important;
+  border: 2px solid rgba(84,86,90,0.08) !important;
+  box-shadow: inset 15px 15px 20px 0.5px rgba(0,0,0,0.12),
+              inset -12px -12px 20px 0.5px rgba(72,78,88,0.35);
+  border-radius: 7px !important;
+}
+/*
+background: #393E46;
+border: 2px solid rgba(84,86,90,0.42);
+box-shadow: inset 15px 15px 20px 1px rgba(0,0,0,0.22), inset -7px -7px 20px 1px rgba(72,78,88,0.60);
+border-radius: 31px; */
+
+input:focus, input.form-control:focus, textarea:focus, textarea.form-control:focus {
+    /* outline:none !important;
+    outline-width: 0 !important; */
+    box-shadow: inset 7px 7px 15px 0.5px rgba(0,0,0,0.12);
+}
+
+.post-bck{
+  margin: 2% 0%;
+}
+
+.about-para{
+  opacity: 0.9;
+  padding: 2%;
+  line-height: 2;
+  font-size: 24px;
+  margin-bottom: 0px;
+}
+
+.about-title{
+  font-size: 32px !important;
+  color: #00ADB5;
+  line-height: 1 !important;
+  /* margin-bottom: 1%; */
+}
+
+
+.social-media{
+  width: 100%;
+  text-align: center;
+  margin-bottom: 2%;
+}
+
+.social-media a{
+  opacity: 0.7;
+}
+
+.social-media a:hover{
+  opacity: 1;
+
+}
+
+.social-media a{
+  padding: 1% !important;
+  color: #eee;
+  font-size: 21px;
+}
+
+
+
+
+
+/* Responsive Media Queries */
+@media (min-width: 1920px){
+/* @media (min-width: 2560px) and (max-width: 1440px){ */
+  .form-bck{
+    margin: 3%;
+    margin-top: 10vh;
+  }
+  .form-group{
+    margin-bottom: 2%;
+  }
+  label{
+    margin-bottom: 1%;
+    font-size: 27px;
+  }
+  textarea{
+    height: 400px !important;
+  }
+  .compose-bt a {
+    font-size: 27px !important;
+  }
+  input, textarea{
+    border-radius: 10px !important;
+  }
+  .about-para{
+    font-size: 36px;
+    margin-bottom: 0px;
+  }
+
+}
+
+@media (max-width: 991px){
+  .post-bck{
+    margin-bottom: 5% !important;
+  }
+  .form-bck{
+    margin: 4%;
+  }
+  form{
+    padding: 4% 4% 2% 4%;
+  }
+  .compose-bt{
+    margin-top: 3% !important;
+  }
+  textarea{
+    height: 200px !important;
+  }
+  .about-title{
+    margin-bottom: 2%;
+  }
+}
+
+@media (max-width: 768px){
+  .post-bck{
+    margin-top: 2% !important;
+  }
+  .form-bck{
+    margin-bottom: 6% !important;
+  }
+  .main{
+    /* margin: 5%: */
+    margin-top: 5%;
+  }
+  textarea{
+    height: 400px !important;
+  }
+  .about-title{
+    margin-bottom: 3%;
+  }
+}
+
+@media (max-width: 490px){
+  .social-media{
+    margin-top: 10%;
+  }
+  .social-media a{
+    padding: 4% !important;
+  }
+
+
+  .about-para{
+    font-size: 21px;
+    padding: 5%;
+    line-height: 1.9;
+  }
+  h1{
+    font-size: 31px !important;
+  }
+  .main{
+    margin-top: 10%;
+  }
+  .form-bck{
+    margin: 12% 3% 5% 3%;
+  }
+  form{
+    padding: 6%;
+  }
+  input, textarea, .form-bck, .compose-bt{
+    border-radius: 7px !important;
+  }
+  .about-title{
+    font-size: 31px !important;
+    color: #00ADB5;
+    line-height: 1 !important;
+    margin-bottom: 2%;
+  }
+}
+
+@media (max-width: 390px){
+  .about-para{
+    font-size: 18px;
+    padding: 4%;
+    line-height: 1.5;
+  }
+  .container-fluid::before {
+    clip-path: circle(12% at 5% 6%);
+  }
+  h1{
+    font-size: 31px;
+  }
+  .small{
+    font-size: 31px;
+  }
+  .left{
+    padding-top: 23%;
+  }
+  .post{
+    padding: 8%;
+    margin: 3%;
+  }
+  .graphics{
+    top: -1%;
+  }
+  .updates{
+    margin: -1% 0%;
+  }
+}
+
+@media (max-width: 320px){
+  .container-fluid::before {
+    clip-path: circle(14% at 5% 6%);
+  }
+  .about-title{
+    font-size: 27px !important;
+  }
+  h1{
+    font-size: 27px;
+  }
+  .small{
+    font-size: 27px;
+  }
+}
