@@ -1,0 +1,5 @@
+db.txt
+.DS_Store
+*.sketch
+*.mp4
+node_modules/
